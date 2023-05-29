@@ -3,31 +3,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
 * {
-    padding: 0%;
     margin: 0%;
+    padding: 0%;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
 }
 
 header {
-  background-color: black;
-  padding: 60px;
-}
-
-header h1 {
-    color: white;
-    text-align: center;
-    font-style: 'https://fonts.googleapis.com/css2?family=Passion+One&display=swap';
-}
-
-header p {
+    background-color: black;
     color: white;
     text-align: center;
 }
 
-header a {
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px ;
+}
+
+a {
     color: white;
     text-decoration: none;
+    font-weight: bolder;
 }
 
-header a:hover {
+a:hover {
     text-decoration: underline;
+    color: black;
+}
+
+section {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    line-height: 2em;
+    padding-left: 30px;
+}
+section.normal {
+    background-color: white;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.533);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.407);
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
